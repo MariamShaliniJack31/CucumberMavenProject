@@ -48,7 +48,7 @@ public class CucumberStepDefFirst extends ExtentReportListener{
 	@When("^I open Google Homepage$")
 	public void i_open_Google_Homepage() throws AWTException  {
 		DriverScript.openURL();
-		System.out.println("HI3");
+		System.out.println("HI5");
 	}
 	
 	@Then("^I verify that the page displays search text box$")
