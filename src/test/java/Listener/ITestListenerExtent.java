@@ -6,9 +6,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 
-public class ITestListenerExtent extends ExtentReportListener implements ITestListener {
-
-	private static ExtentReports extent;
+public class ITestListenerExtent extends ExtentReportListenerV5 implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 	}

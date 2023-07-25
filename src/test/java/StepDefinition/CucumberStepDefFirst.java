@@ -10,7 +10,7 @@ import com.aventstack.extentreports.GherkinKeyword;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import com.aventstack.extentreports.gherkin.model.Scenario;
 import Base.DriverScript;
-import Listener.ExtentReportListener;
+import Listener.ExtentReportListenerV5;
 //import Listener.ITestListenerExtent;
 import Pages.GoogleHomePage;
 import Pages.GoogleHomePageFactory;
@@ -21,7 +21,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class CucumberStepDefFirst extends ExtentReportListener{
+public class CucumberStepDefFirst extends ExtentReportListenerV5{
 
 	WebDriver driver;
 	protected GoogleHomePage ghp;
