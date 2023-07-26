@@ -78,8 +78,8 @@ public class DriverScript {
 			String browser = prop.getProperty("Browser");
 			if (browser.equalsIgnoreCase("Chrome")) {
 				System.out.println("I am Chrome in OPENURL");
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\mrufu\\Downloads\\chromedriver_win32\\chromedriver.exe");
-				//WebDriverManager.chromedriver().arch64().setup();;
+				//System.setProperty("webdriver.chrome.driver", "C:\\Users\\mrufu\\Downloads\\chromedriver_win32\\chromedriver.exe");
+				WebDriverManager.chromedriver().arch64().setup();;
 				driver = new ChromeDriver();
 			}	else if (browser.equalsIgnoreCase("edge")) {
 				System.out.println("I am OPENURL EDGE");

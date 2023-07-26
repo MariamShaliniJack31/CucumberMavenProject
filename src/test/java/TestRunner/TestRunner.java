@@ -3,8 +3,12 @@ package TestRunner;
 import org.junit.runner.RunWith;
 //import cucumber.api.junit.Cucumber;
 // If you want to run with junit, we need @RunWith annotation and junit RunWith and Cucumber jars
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+//import cucumber.api.CucumberOptions;
+//import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
 //import org.testng.annotations.AfterTest;
 //import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.BeforeMethod;
@@ -17,7 +21,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //import org.testng.annotations.AfterSuite;
 //import org.testng.annotations.BeforeSuite;
 //import org.testng.annotations.Test;
-
 //import Utils.FileOperations;
 //import Utils.PropertyFileUtility;
 //import Utils.ReporterUtil;
