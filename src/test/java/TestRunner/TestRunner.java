@@ -1,14 +1,21 @@
 package TestRunner;
 
-import org.junit.runner.RunWith;
-//import cucumber.api.junit.Cucumber;
-// If you want to run with junit, we need @RunWith annotation and junit RunWith and Cucumber jars
-//import cucumber.api.CucumberOptions;
-//import cucumber.api.testng.AbstractTestNGCucumberTests;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+
+import org.testng.annotations.BeforeSuite;
+
+import Log4jUtils.LogFile;
+
+
+//import org.junit.runner.RunWith;
+//import cucumber.api.junit.Cucumber;
+//If you want to run with junit, we need @RunWith annotation and junit RunWith and Cucumber jars
+//import cucumber.api.CucumberOptions;
+//import cucumber.api.testng.AbstractTestNGCucumberTests;
 //import org.testng.annotations.AfterTest;
 //import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.BeforeMethod;
@@ -37,6 +44,30 @@ glue = {"StepDefinition"} , plugin = {"pretty", "html:target/HTMLReports",
 //
 //}
 public class TestRunner extends AbstractTestNGCucumberTests {
+	
+	@BeforeSuite
+	public void initialize() {
+		
+		try {
+			System.setProperty("log4j2.configurationFile", System.getProperty("user.dir") +"//src//main//resources//Log4jProperties/log4j2.properties");
+			System.out.println( System.getProperty("log4j2.configurationFile") );
+			System.out.println("I am in BeforeSuite in TestRunner -- Log4j2");
+			LogFile.logger.atLevel(Level.ALL);
+			LogFile.startLog(null);
+			LogFile.logger.warn("Starting the Suite");
+			LogFile.logger.info("Starting the Suite");
+			LogFile.logger.trace("Starting the Suite");
+			
+			LogFile.logger.debug("Starting the Suite");
+			LogFile.logger.error("Starting the Suite");
+			LogFile.logger.fatal("Starting the Suite");
+
+		} catch (Throwable t) {
+			t.printStackTrace();
+			System.out.println("Unable to initialize the log file");
+			LogFile.logger.error("Error in initialize the Log file");
+		}
+	}
 	
 }
 

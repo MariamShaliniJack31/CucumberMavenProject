@@ -1,0 +1,7 @@
+[INFO ] 2023-07-27 17:37:43.704 [main] LogFile - ******************Test is Starting...**********************
+[WARN ] 2023-07-27 17:37:43.707 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-27 17:37:43.708 [main] LogFile - Starting the Suite
+[DEBUG] 2023-07-27 17:37:43.708 [main] LogFile - Starting the Suite
+[ERROR] 2023-07-27 17:37:43.708 [main] LogFile - Starting the Suite
+[FATAL] 2023-07-27 17:37:43.708 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-27 17:37:49.597 [main] LogFile - Launched Google Application

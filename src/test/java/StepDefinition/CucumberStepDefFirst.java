@@ -9,6 +9,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.GherkinKeyword;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import com.aventstack.extentreports.gherkin.model.Scenario;
+import Log4jUtils.LogFile;
+
 import Base.DriverScript;
 import Listener.ExtentReportListenerV5;
 //import Listener.ITestListenerExtent;
@@ -68,6 +70,7 @@ public class CucumberStepDefFirst extends ExtentReportListenerV5{
 			test = extent.createTest(Feature.class, "Google HomePage");
 			test = test.createNode(Scenario.class, "Check if Google Search & Feeling Lucky Buttons");
 			logInfo = test.createNode(new GherkinKeyword("Given"), "Opened Google HomePage");
+			Log4jUtils.LogFile.logger.info("Launched Google Application");
 
 		} catch (AssertionError | Exception e) {
 			testStepHandle("FAIL", driver, logInfo, e);
