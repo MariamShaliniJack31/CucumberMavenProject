@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
+<Configuration status="warn">
+
+	<Properties>
+		<!-- Here we are basePath value as Logs ( Logs we created this folder from 
+			Properties File -->
+		<Property name="basePath">Logs</Property>
+	</Properties>
+
 	<Appenders>
-		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout
-				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-		</Console>
+		<RollingFile name="fileLogger"
+			fileName="${basePath}/LogsfromXML.log"
+			filePattern="${basePath}/LogsfromXML-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<!-- Max 10 files will be created everyday -->
+			<DefaultRolloverStrategy max="10">
+				<Delete basePath="${basePathr}" maxDepth="10">
+					<!-- Delete all files older than 30 days -->
+					<IfLastModified age="30d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
 	</Appenders>
+	
 	<Loggers>
-		<Logger name="com.example" level="INFO" />
-		<Root level="error">
-			<AppenderRef ref="Console" />
+		<!--  Logger Name is Package Name src/main/java -->
+		<!--  If level in Line 36 id debug, trace msgs didnot come in LogsfromXML.log file -->
+		<Logger name="Log4jUtils" additivity="false" level="all">
+			<!-- 	This name is given in Line 11 -->
+			<appender-ref ref="fileLogger" />
+		</Logger>
+
+		<Root level="info" additivity="false">
+			<appender-ref ref="fileLogger" />
 		</Root>
 	</Loggers>
+	
 </Configuration>

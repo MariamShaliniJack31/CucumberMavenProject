@@ -1,0 +1,15 @@
+[INFO ] 2023-07-28 15:34:59.386 [main] LogFile - ******************Test is Starting...**********************
+[WARN ] 2023-07-28 15:34:59.388 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-28 15:34:59.388 [main] LogFile - Starting the Suite
+[DEBUG] 2023-07-28 15:34:59.388 [main] LogFile - Starting the Suite
+[ERROR] 2023-07-28 15:34:59.388 [main] LogFile - Starting the Suite
+[FATAL] 2023-07-28 15:34:59.388 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-28 15:35:04.978 [main] LogFile - Launched Google Application
+[INFO ] 2023-07-28 15:41:35.876 [main] LogFile - ******************Test is Starting...**********************
+[WARN ] 2023-07-28 15:41:35.879 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-28 15:41:35.879 [main] LogFile - Starting the Suite
+[TRACE] 2023-07-28 15:41:35.879 [main] LogFile - Starting the Suite
+[DEBUG] 2023-07-28 15:41:35.879 [main] LogFile - Starting the Suite
+[ERROR] 2023-07-28 15:41:35.880 [main] LogFile - Starting the Suite
+[FATAL] 2023-07-28 15:41:35.880 [main] LogFile - Starting the Suite
+[INFO ] 2023-07-28 15:41:42.189 [main] LogFile - Launched Google Application

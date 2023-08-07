@@ -49,7 +49,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	public void initialize() {
 		
 		try {
-			System.setProperty("log4j2.configurationFile", System.getProperty("user.dir") +"//src//main//resources//Log4jProperties/log4j2.properties");
+			System.setProperty("log4j2.configurationFile", System.getProperty("user.dir") +"//src//main//resources//Log4jProperties/log4j2.xml");
 			System.out.println( System.getProperty("log4j2.configurationFile") );
 			System.out.println("I am in BeforeSuite in TestRunner -- Log4j2");
 			LogFile.logger.atLevel(Level.ALL);
@@ -70,25 +70,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
