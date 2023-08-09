@@ -39,7 +39,7 @@ import Log4jUtils.LogFile;
 @CucumberOptions(features = {"src/test/resources/Features/FeatureFile.feature"},
 glue = {"StepDefinition"} , plugin = {"pretty", "html:target/HTMLReports", 
 												"json:target/cucumber.json"})
-		
+									
 //public class RunCuke {
 //
 //}
