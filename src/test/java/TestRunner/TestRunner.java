@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 
 import org.testng.annotations.BeforeSuite;
-
 import Log4jUtils.LogFile;
 
 
@@ -38,8 +37,10 @@ import Log4jUtils.LogFile;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/Features/FeatureFile.feature"},
 glue = {"StepDefinition"} , plugin = {"pretty", "html:target/HTMLReports", 
-												"json:target/cucumber.json"})
+												"json:target/cucumber.json",
+												})
 									
+//"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 //public class RunCuke {
 //
 //}
@@ -73,6 +74,17 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 
 
+//<!-- For Allure Cucumber Reporting, Uncomment this -->
+//<!-- <argLine> -->
+//<!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" -->
+//<!-- -Dcucumber.options="--plugin io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm" -->
+//<!-- </argLine> -->
+//
+//<!-- <systemPropertyVariables> -->
+//<!-- <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory> -->
+//<!-- <allure.link.issue.pattern>https://example.org/browse/{}</allure.link.issue.pattern> -->
+//<!-- <allure.link.tms.pattern>https://example.org/browse/{}</allure.link.tms.pattern> -->
+//<!-- </systemPropertyVariables> -->
 
 
 

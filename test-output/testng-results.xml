@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="7767" started-at="2023-08-04T13:56:01 EDT" finished-at="2023-08-04T13:56:09 EDT">
+  <suite name="Suite" duration-ms="8999" started-at="2023-08-11T13:41:37 EDT" finished-at="2023-08-11T13:41:46 EDT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@16022d9d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@313ac989]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="7767" started-at="2023-08-04T13:56:01 EDT" finished-at="2023-08-04T13:56:09 EDT">
+    <test name="Test" duration-ms="8999" started-at="2023-08-11T13:41:37 EDT" finished-at="2023-08-11T13:41:46 EDT">
       <class name="TestRunner.TestRunner">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:TestRunner.TestRunner@16022d9d]" name="initialize" is-config="true" duration-ms="388" started-at="2023-08-04T13:56:00 EDT" finished-at="2023-08-04T13:56:01 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestRunner.TestRunner@313ac989]" name="initialize" is-config="true" duration-ms="558" started-at="2023-08-11T13:41:36 EDT" finished-at="2023-08-11T13:41:37 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@16022d9d]" name="setUpClass" is-config="true" duration-ms="462" started-at="2023-08-04T13:56:01 EDT" finished-at="2023-08-04T13:56:01 EDT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@313ac989]" name="setUpClass" is-config="true" duration-ms="519" started-at="2023-08-11T13:41:37 EDT" finished-at="2023-08-11T13:41:37 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1ca610a0]]>
+                <![CDATA[org.testng.TestRunner@6db328f8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@16022d9d]" name="runScenario" duration-ms="7046" started-at="2023-08-04T13:56:01 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-04T13:56:08 EDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@313ac989]" name="runScenario" duration-ms="8133" started-at="2023-08-11T13:41:37 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-11T13:41:45 EDT">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@16022d9d]" name="tearDownClass" is-config="true" duration-ms="56" started-at="2023-08-04T13:56:08 EDT" finished-at="2023-08-04T13:56:09 EDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@313ac989]" name="tearDownClass" is-config="true" duration-ms="54" started-at="2023-08-11T13:41:45 EDT" finished-at="2023-08-11T13:41:46 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

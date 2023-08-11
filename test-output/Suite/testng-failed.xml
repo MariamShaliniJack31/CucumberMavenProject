@@ -8,8 +8,9 @@
     <classes>
       <class name="TestRunner.TestRunner">
         <methods>
-          <include name="feature" invocation-numbers="0"/>
           <include name="setUpClass"/>
+          <include name="initialize"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- TestRunner.TestRunner -->
